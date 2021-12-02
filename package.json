@@ -4,7 +4,9 @@
   "description": "API for making queries to a Recommender System (CCP2)",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "prepare": "husky install",
+    "hack": "nodemon index.js",
     "lint": "npx eslint ./*.js"
   },
   "repository": {
@@ -23,6 +25,7 @@
   },
   "homepage": "https://github.com/YACT-jp/ccp2-capstone-recommender-api#readme",
   "dependencies": {
+    "axios": "^0.24.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "path": "^0.12.7"
