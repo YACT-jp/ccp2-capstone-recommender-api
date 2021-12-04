@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "prepare": "husky install",
     "hack": "nodemon index.js",
     "lint": "npx eslint ./*.js"
   },
