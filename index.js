@@ -16,8 +16,8 @@ app.get("/", (req, res) => {
 
 /* Query Endpoint */
 // Takes the User ID and makes calls to the ML model
-app.get("/recommender", async (req, res) => {
-  const { user_id } = req.body;
+app.get("/recommender/:user_id", async (req, res) => {
+  const { user_id } = req.params;
 
   retrieval_body = {
     instances: [user_id],
